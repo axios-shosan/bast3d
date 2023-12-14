@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/CameraPage/bindings/camera_page_binding.dart';
+import '../modules/CameraPage/views/camera_page_view.dart';
 import '../modules/gallery/bindings/gallery_binding.dart';
 import '../modules/gallery/views/gallery_view.dart';
 import '../modules/home/bindings/home_binding.dart';
@@ -22,6 +24,11 @@ class AppPages {
       name: _Paths.GALLERY,
       page: () => const GalleryView(),
       binding: GalleryBinding(),
+    ),
+    GetPage(
+      name: _Paths.CAMERA_PAGE,
+      page: () => const CameraPageView(),
+      binding: CameraPageBinding(),
     ),
   ];
 }

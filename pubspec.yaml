@@ -10,6 +10,7 @@ dependencies:
   get: 4.6.6
   custom_gallery_display: 0.5.0
   image_picker: ^0.8.9
+  camera: 0.10.5+7
   flutter: 
     sdk: flutter
 
@@ -20,4 +21,9 @@ dev_dependencies:
 
 flutter: 
   uses-material-design: true
+
+analyzer: 
+  language: 
+    enableSuperMixins: true
+  strong-mode: true
 

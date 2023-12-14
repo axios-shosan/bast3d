@@ -44,6 +44,10 @@ class BottomNavigationBarController extends GetxController {
         _currentTab.value = MainTabs.gallery;
         Get.toNamed(Routes.GALLERY);
         break;
+      case 2:
+        _currentTab.value = MainTabs.camera;
+        Get.toNamed(Routes.CAMERA_PAGE);
+        break;
       default:
         _currentTab.value = MainTabs.network;
     }
