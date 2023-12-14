@@ -23,12 +23,13 @@ class _ArViewState extends State<ArView> {
     arCoreController = controller;
     arCoreController?.onNodeTap = (name) => onTapHandler(name);
     arCoreController?.onPlaneTap = _handleOnPlaneTap;
+    arCoreController?.
   }
 
   void _addToucano(ArCoreHitTestResult plane) {
     final toucanNode = ArCoreReferenceNode(
         name: "Bastion 23 in 3D",
-        object3DFileName: "/home/axios/coding/usthb/sem/bast3d/lib/app/assets/bastion23.glb",
+        objectUrl: "https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/Duck/glTF/Duck.gltf",
         position: plane.pose.translation,
         rotation: plane.pose.rotation);
 
