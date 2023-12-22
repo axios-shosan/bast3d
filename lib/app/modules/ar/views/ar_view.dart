@@ -3,7 +3,7 @@ import 'package:bast3d/app/shared/BottomNavigationbar/bottomNavigationBar_view.d
 import 'package:vector_math/vector_math_64.dart' as vector64;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
+import 'package:model_viewer_plus/model_viewer_plus.dart';
 import 'package:get/get.dart';
 
 import '../controllers/ar_controller.dart';
@@ -20,10 +20,10 @@ class _ArViewState extends State<ArView> {
   String? objectSelected;
 
   void onArCoreViewCreated(ArCoreController controller) {
+
     arCoreController = controller;
     arCoreController?.onNodeTap = (name) => onTapHandler(name);
     arCoreController?.onPlaneTap = _handleOnPlaneTap;
-    arCoreController?.
   }
 
   void _addToucano(ArCoreHitTestResult plane) {

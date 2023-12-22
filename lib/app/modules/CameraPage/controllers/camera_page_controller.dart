@@ -17,7 +17,6 @@ class CameraPageController extends GetxController {
   }
 
   Future<void> takePicture() async {
-    print("inside take picture");
     if(_cameraController == null) {
       return;
     }

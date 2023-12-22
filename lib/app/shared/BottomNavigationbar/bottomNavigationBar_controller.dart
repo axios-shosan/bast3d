@@ -48,6 +48,9 @@ class BottomNavigationBarController extends GetxController {
         _currentTab.value = MainTabs.camera;
         Get.toNamed(Routes.CAMERA_PAGE);
         break;
+      case 3:
+        _currentTab.value = MainTabs.guide;
+        Get.toNamed(Routes.GUIDE);
       case 4:
         _currentTab.value = MainTabs.ar;
         Get.toNamed(Routes.AR);
